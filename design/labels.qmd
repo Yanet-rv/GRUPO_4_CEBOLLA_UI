@@ -1,0 +1,104 @@
+---
+title: "experimental labels"
+format:
+  html:
+    toc: true
+    toc-location: left
+    number-sections: true
+    self-contained: true
+    output-file: "labels"
+editor_options: 
+  chunk_output_type: console
+execute: 
+  echo: true
+  message: false
+  warning: false
+---
+
+# Setup
+
+```{r}
+#| label: setup
+
+source("https://inkaverse.com/setup.r")
+```
+
+## Field-book
+
+```{r}
+gs <- "url" %>% 
+  as_sheets_id()
+
+fb <- gs %>% 
+  range_read(ss = .,sheet = "fb")
+
+#> Google fonts: https://fonts.google.com/
+
+font <- c("Merriweather Sans", "Permanent Marker", "Tillana")
+huito_fonts(font)
+```
+
+## Labels 
+
+```{r}
+label <- fb %>%
+  label_layout(size = c(5.2, 10)
+               , border_color = "forestgreen"
+               , border_width = 1.5
+               ) %>%
+  include_image(
+    value = "https://doctoradofisica.uni.edu.pe/wp-content/uploads/2024/01/d123d3.webp"
+    , size = c(3, 3)
+    , position = c(1.6, 9.5)
+    ) %>% 
+  include_image(
+    value = "https://huito.inkaverse.com/img/scale.pdf"
+    , size = c(5, 1)
+    , position = c(2.6, 8.5)
+    ) %>% 
+  include_barcode(
+    value = "qrcode"
+    , size = c(5, 5)
+    , position = c(2.6, 5.5)
+    ) %>% 
+  include_text(value = "plots"
+               , position = c(4.4, 9.5)
+               , size = 16
+               , color = "black"
+               , font = font[3]
+               ) %>% 
+  include_text(value = "factor1"
+               , position = c(2.6, 2.6)
+               , size = 16
+               , color = "blue"
+               , font = font[1]
+               , prefix = "Factor1: "
+               ) %>% 
+  include_text(value = "factor2"
+               , position = c(2.6, 1.8)
+               , size = 15
+               , color = "red"
+               , font = font[1]
+               , prefix = "Factor2: "
+               ) %>% 
+  include_image(
+    value = "https://huito.inkaverse.com/img/scale.pdf"
+    , size = c(5, 1)
+    , position = c(2.6, 0.9)
+    # , opts = 'image_convert(type = "Grayscale")'
+    ) 
+
+label %>% label_print(mode = "preview")
+```
+
+```{r}
+#| eval: false
+
+label %>% 
+  label_print(mode = "complete"
+              , filename = "design/labels"
+              , paper = c(100, 100)
+              , units = "cm"
+              )
+```
+
