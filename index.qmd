@@ -1,0 +1,84 @@
+---
+title: "Efecto de la luz en la germinación de semillas de cebolla ( Allium cepa L.)"
+author: "Fernandez Rojas, D ; Gomez cruz, K ; Maicelo Villanueva , L ; Rivera Jimenez , Y ; Ortiz Zavaleta , L"
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+    toc-location: left
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    smooth-scroll: true
+page-layout: full
+editor: visual
+markdown: 
+  wrap: 72
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+# Introducción
+
+La cebolla (Allium cepa L.) es una hortaliza de gran importancia socioeconómica a nivel mundial, ocupando el segundo lugar en producción global, con más de 99 millones de toneladas en más de 5 millones de hectáreas (Imran et al., 2025). Además de su valor culinario, posee propiedades funcionales debido a su contenido de flavonoides, compuestos azufrados, vitaminas A y C, y minerales con actividad antioxidante, hipoglicémica y antimicrobiana (Muscolo et al., 2025). Por ello, la obtención de plántulas vigorosas a partir de semillas de alta calidad es clave para el éxito del cultivo, ya que la germinación determina la densidad de establecimiento y la uniformidad del campo (Taylor, 2003). La germinación es un proceso fisiológico regulado por factores ambientales como la temperatura, el agua y la luz. En semillas de cebolla, se ha demostrado que la germinación óptima ocurre entre 10 y 30 °C, con mayor vigor a 25 °C en oscuridad, mientras que temperaturas extremas reducen significativamente la germinación (Abu-Rayyan et al., 2012). Asimismo, la luz puede inhibir este proceso, favoreciendo plántulas anormales, fenómeno asociado al fotoblatismo negativo, donde la germinación es favorecida en ausencia de luz (Bewley & Black, 2012; Renard, 1989). El presente experimento evaluó el efecto de la luz en la germinación de semillas de cebolla variedad Early sweet, bajo la hipótesis de que existirían diferencias significativas en el tiempo y porcentaje de germinación. Se empleó un diseño completamente al azar con dos tratamientos: con luz y sin luz, cada uno con seis repeticiones, registrándose la germinación acumulada durante seis días. Los datos fueron registrados en una planilla de campo y posteriormente analizados con el paquete GerminaR en el entorno estadístico R.
+
+# Materiales y métodos"
+
+Para llevar a cabo el experimento se empleó lo siguiente:
+
+## Materiales
+
+-   Semilla de cebolla (Allium cepa L).
+-   Taper de plastico
+-   Papel
+-   toalla
+-   Bolsa negra
+-   Jeringa
+-   Agua mineral
+-   Pinzas
+-   Cuaderno/Lápiz.
+-   Cinta scotch
+-   Ligas Regla
+-   Guantes de latex
+-   Etiquetas
+
+![](images/materiales.png){fig-align="center"}
+
+Figura 1. Materiales
+
+## Métodos
+
+El procedimiento experimental consistió en poner el papel toalla dentro de los tapers y humedecer con agua haciendo uso de la jeringa, sobre el cual se colocaron 25 semillas de cebolla por recipiente, distribuidas de manera uniforme con ayuda de las pinzas y evitando el contacto directo entre las semillas.
+
+Para el tratamiento sin luz (ntreat=2), los recipientes fueron cubiertos herméticamente con bolsas negras, asegurados con las ligas para impedir el ingreso de luz. El tratamiento con luz (ntreat= 1) se mantuvo descubierto bajo iluminación ambiental. Ambos tratamientos permanecieron a temperatura ambiente durante todo el periodo experimental. La humedad fue repuesta solo en caso si fuera necesario.
+
+A partir del Día 0 y hasta el Día 6, se registró diariamente el número de semillas germinadas nuevas por recipiente, contabilizando como germinada aquella semilla que presentó radícula visible de longitud mayor a 2mm. Los valores registrados en la tabla 1 corresponden a la germinación diaria más no al acumulado.
+
+# Resultados y discusiones
+
+## Resultados
+
+![](images/imgen%20g4_UI-01.jpeg){fig-align="center"}
+
+Figura 2.
+
+## Discusiones
+
+# Conclusiones
+
+# Referencias bibliográficas
+
+Abu-Rayyan, A., Akash, M. W., & Gianquinto, G. (2012). Onion Seed Germination as Affected by Temperature and Light. International Journal of Vegetable Science, 18(1), 49-63. https://doi.org/10.1080/19315260.2011.570419
+
+Bewley, J. D., & Black, M. (2012). Physiology and Biochemistry of Seeds in Relation to Germination: Volume 2: Viability, Dormancy, and Environmental Control. Springer Science & Business Media.
+
+Imran, M., Kang, H., Lee, S.-G., Kim, E.-H., Park, H.-M., & Oh, S.-W. (2025). Current Trends and Future Prospects in Onion Production, Supply, and Demand in South Korea: A Comprehensive Review. Sustainability, 17(3), 837. https://doi.org/10.3390/su17030837
+
+Muscolo, A., Maffia, A., Marra, F., Battaglia, S., Oliva, M., Mallamaci, C., & Russo, M. (2025). Unlocking the Health Secrets of Onions: Investigating the Phytochemical Power and Beneficial Properties of Different Varieties and Their Parts. Molecules, 30(8), 1758. https://doi.org/10.3390/molecules30081758
+
+Renard, H. A. (1989). INFLUENCES OF LIGHT ON THE GERMINATION AND FIRST GROWTH IN TWO VEGETABLE SPECIES: ALLIUM CEPA AND RAPHANUS SATIVUS. Acta Horticulturae, (253), 187-202. https://doi.org/10.17660/ActaHortic.1989.253.20
+
+Taylor, A. G. (2003). SEED DEVELOPMENT \| Seed Quality. 1285-1291. https://doi.org/10.1016/B0-12-227050-9/00056-9

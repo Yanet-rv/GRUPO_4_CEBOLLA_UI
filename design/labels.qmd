@@ -26,7 +26,7 @@ source("https://inkaverse.com/setup.r")
 ## Field-book
 
 ```{r}
-gs <- "url" %>% 
+gs <- "https://docs.google.com/spreadsheets/d/1H4cFIAuK2Tp64imJImz26VLf_OJ7_v_b11b4BPvCwTc/edit?gid=1999022664#gid=1999022664" %>% 
   as_sheets_id()
 
 fb <- gs %>% 
@@ -42,44 +42,38 @@ huito_fonts(font)
 
 ```{r}
 label <- fb %>%
-  label_layout(size = c(5.2, 10)
+  label_layout(size = c(5.2, 8.5)
                , border_color = "forestgreen"
                , border_width = 1.5
                ) %>%
   include_image(
     value = "https://doctoradofisica.uni.edu.pe/wp-content/uploads/2024/01/d123d3.webp"
-    , size = c(3, 3)
-    , position = c(1.6, 9.5)
+    , size = c(3, 1)
+    , position = c(1.7, 8)
     ) %>% 
   include_image(
     value = "https://huito.inkaverse.com/img/scale.pdf"
-    , size = c(5, 1)
-    , position = c(2.6, 8.5)
+    , size = c(3, 1)
+    , position = c(1.9, 5)
     ) %>% 
   include_barcode(
     value = "qrcode"
     , size = c(5, 5)
-    , position = c(2.6, 5.5)
+    , position = c(2.6, 5.1)
     ) %>% 
   include_text(value = "plots"
-               , position = c(4.4, 9.5)
-               , size = 16
-               , color = "black"
-               , font = font[3]
+               , position = c(4.4, 8)
+               , size = 14
+               , color = "red"
+               , fontface = "bold"
+               , font = font[2]
                ) %>% 
-  include_text(value = "factor1"
-               , position = c(2.6, 2.6)
+  include_text(value = "Luz"
+               , position = c(2.8, 2.1)
                , size = 16
                , color = "blue"
                , font = font[1]
-               , prefix = "Factor1: "
-               ) %>% 
-  include_text(value = "factor2"
-               , position = c(2.6, 1.8)
-               , size = 15
-               , color = "red"
-               , font = font[1]
-               , prefix = "Factor2: "
+               , prefix = "Luz: "
                ) %>% 
   include_image(
     value = "https://huito.inkaverse.com/img/scale.pdf"
@@ -97,7 +91,7 @@ label %>% label_print(mode = "preview")
 label %>% 
   label_print(mode = "complete"
               , filename = "design/labels"
-              , paper = c(100, 100)
+              , paper = c( 21, 29.8)
               , units = "cm"
               )
 ```
