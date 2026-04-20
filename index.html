@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Fernandez Rojas, D ; Gomez cruz, K ; Maicelo Villanueva , L ; Rivera Jimenez , Y ; Ortiz Zavaleta , L">
+<meta name="author" content="Fernandez Rojas, D ; Gomez cruz, K ; Maicelo Villanueva , L ; Ortiz Zavaleta , L; Rivera Jimenez , Y ;">
 
 <title>Efecto de la luz en la germinación de semillas de cebolla ( Allium cepa L.)</title>
 <style>
@@ -87,10 +87,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">1</span> Introducción</a></li>
-  <li><a href="#materiales-y-métodos" id="toc-materiales-y-métodos" class="nav-link" data-scroll-target="#materiales-y-métodos"><span class="header-section-number">2</span> Materiales y métodos”</a>
+  <li><a href="#materiales-y-métodos" id="toc-materiales-y-métodos" class="nav-link" data-scroll-target="#materiales-y-métodos"><span class="header-section-number">2</span> Materiales y métodos</a>
   <ul class="collapse">
   <li><a href="#materiales" id="toc-materiales" class="nav-link" data-scroll-target="#materiales"><span class="header-section-number">2.1</span> Materiales</a></li>
-  <li><a href="#métodos" id="toc-métodos" class="nav-link" data-scroll-target="#métodos"><span class="header-section-number">2.2</span> Métodos</a></li>
+  <li><a href="#métodos" id="toc-métodos" class="nav-link" data-scroll-target="#métodos"><span class="header-section-number">2.2</span> Métodos</a>
+  <ul class="collapse">
+  <li><a href="#desarrollo-del-experimento" id="toc-desarrollo-del-experimento" class="nav-link" data-scroll-target="#desarrollo-del-experimento"><span class="header-section-number">2.2.1</span> Desarrollo del experimento</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#resultados-y-discusiones" id="toc-resultados-y-discusiones" class="nav-link" data-scroll-target="#resultados-y-discusiones"><span class="header-section-number">3</span> Resultados y discusiones</a>
   <ul class="collapse">
@@ -108,7 +111,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Efecto de la luz en la germinación de semillas de cebolla ( Allium cepa L.)</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Efecto de la luz en la germinación de semillas de cebolla ( <em>Allium cepa</em> L.)</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -118,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Fernandez Rojas, D ; Gomez cruz, K ; Maicelo Villanueva , L ; Rivera Jimenez , Y ; Ortiz Zavaleta , L </p>
+             <p>Fernandez Rojas, D ; Gomez cruz, K ; Maicelo Villanueva , L ; Ortiz Zavaleta , L; Rivera Jimenez , Y ; </p>
           </div>
   </div>
     
@@ -133,15 +136,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introducción" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Introducción</h1>
-<p>La cebolla (Allium cepa L.) es una hortaliza de gran importancia socioeconómica a nivel mundial, ocupando el segundo lugar en producción global, con más de 99 millones de toneladas en más de 5 millones de hectáreas (Imran et al., 2025). Además de su valor culinario, posee propiedades funcionales debido a su contenido de flavonoides, compuestos azufrados, vitaminas A y C, y minerales con actividad antioxidante, hipoglicémica y antimicrobiana (Muscolo et al., 2025). Por ello, la obtención de plántulas vigorosas a partir de semillas de alta calidad es clave para el éxito del cultivo, ya que la germinación determina la densidad de establecimiento y la uniformidad del campo (Taylor, 2003). La germinación es un proceso fisiológico regulado por factores ambientales como la temperatura, el agua y la luz. En semillas de cebolla, se ha demostrado que la germinación óptima ocurre entre 10 y 30 °C, con mayor vigor a 25 °C en oscuridad, mientras que temperaturas extremas reducen significativamente la germinación (Abu-Rayyan et al., 2012). Asimismo, la luz puede inhibir este proceso, favoreciendo plántulas anormales, fenómeno asociado al fotoblatismo negativo, donde la germinación es favorecida en ausencia de luz (Bewley &amp; Black, 2012; Renard, 1989). El presente experimento evaluó el efecto de la luz en la germinación de semillas de cebolla variedad Early sweet, bajo la hipótesis de que existirían diferencias significativas en el tiempo y porcentaje de germinación. Se empleó un diseño completamente al azar con dos tratamientos: con luz y sin luz, cada uno con seis repeticiones, registrándose la germinación acumulada durante seis días. Los datos fueron registrados en una planilla de campo y posteriormente analizados con el paquete GerminaR en el entorno estadístico R.</p>
+<p>La cebolla (<em>Allium cepa</em> L.) es una hortaliza de gran importancia socioeconómica a nivel mundial, ocupando el segundo lugar en producción global, con más de 99 millones de toneladas en más de 5 millones de hectáreas (Imran et al., 2025). Además de su valor culinario, posee propiedades funcionales debido a su contenido de flavonoides, compuestos azufrados, vitaminas A y C, y minerales con actividad antioxidante (Muscolo et al., 2025). Por ello, la obtención de plántulas vigorosas a partir de semillas de alta calidad es clave, ya que la germinación determina la densidad de establecimiento y la uniformidad del cultivo (Taylor, 2003). La germinación es un proceso fisiológico regulado por factores ambientales como temperatura, agua y luz. En semillas de cebolla, la germinación óptima ocurre entre 10 y 30 °C, con mayor vigor a 25 °C en oscuridad, mientras que condiciones extremas la reducen significativamente (Abu-Rayyan et al., 2012). Asimismo, la luz puede inhibir este proceso, favoreciendo plántulas anormales, fenómeno asociado al fotoblatismo negativo, donde la germinación se favorece en ausencia de luz (Bewley &amp; Black, 2012; Renard, 1989). El experimento evaluó el efecto de la luz en la germinación de semillas de cebolla , bajo la hipótesis de diferencias significativas en el tiempo y porcentaje de germinación. Se empleó un diseño completamente al azar con dos tratamientos con ( luz: si y luz no), seis repeticiones y registro de germinación acumulada durante seis días. Los datos fueron registrados en Tarpuy y analizados con el paquete GerminaR en R. Asimismo se planteó como objetivos. Evaluar el efecto de la presencia y ausencia de luz sobre el porcentaje de germinación de semillas de cebolla (<em>Allium cepa</em> L.). y comparar el tamaño de la radícula de las plántulas a los siete días bajo condiciones de luz y sin luz.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/cebolla.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img" width="1000"></p>
+</figure>
+</div>
 </section>
 <section id="materiales-y-métodos" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Materiales y métodos”</h1>
+<h1 data-number="2"><span class="header-section-number">2</span> Materiales y métodos</h1>
 <p>Para llevar a cabo el experimento se empleó lo siguiente:</p>
 <section id="materiales" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="materiales"><span class="header-section-number">2.1</span> Materiales</h2>
 <ul>
-<li>Semilla de cebolla (Allium cepa L).</li>
+<li>Semilla de cebolla <em>(Allium cepa L)</em>.</li>
 <li>Taper de plastico</li>
 <li>Papel</li>
 <li>toalla</li>
@@ -160,32 +168,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="images/materiales.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<p>Figura 1. Materiales</p>
+<p><em>Figura 1. Materiales</em></p>
 </section>
 <section id="métodos" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="métodos"><span class="header-section-number">2.2</span> Métodos</h2>
-<p>El procedimiento experimental consistió en poner el papel toalla dentro de los tapers y humedecer con agua haciendo uso de la jeringa, sobre el cual se colocaron 25 semillas de cebolla por recipiente, distribuidas de manera uniforme con ayuda de las pinzas y evitando el contacto directo entre las semillas.</p>
-<p>Para el tratamiento sin luz (ntreat=2), los recipientes fueron cubiertos herméticamente con bolsas negras, asegurados con las ligas para impedir el ingreso de luz. El tratamiento con luz (ntreat= 1) se mantuvo descubierto bajo iluminación ambiental. Ambos tratamientos permanecieron a temperatura ambiente durante todo el periodo experimental. La humedad fue repuesta solo en caso si fuera necesario.</p>
-<p>A partir del Día 0 y hasta el Día 6, se registró diariamente el número de semillas germinadas nuevas por recipiente, contabilizando como germinada aquella semilla que presentó radícula visible de longitud mayor a 2mm. Los valores registrados en la tabla 1 corresponden a la germinación diaria más no al acumulado.</p>
+<section id="desarrollo-del-experimento" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="desarrollo-del-experimento"><span class="header-section-number">2.2.1</span> Desarrollo del experimento</h3>
+<p>El procedimiento experimental consistió en poner el papel toalla dentro de los tapers y humedecer con agua haciendo uso de la jeringa, sobre el cual se colocaron 25 semillas de cebolla por recipiente, distribuidas de manera uniforme con ayuda de las pinzas y evitando el contacto directo entre las semillas. Para el tratamiento sin luz (ntreat = 2), los seis recipientes fueron cubiertos herméticamente con bolsas negras, asegurados con las ligas para impedir el ingreso de luz. El tratamiento con luz (ntreat= 1) se mantuvo descubierto bajo iluminación ambiental.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/experi.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="454"></p>
+</figure>
+</div>
+<p><em>Figura 2. a) Colocación de las 25 semillas en cada taper; b) Etiquetado; c) Tratamientos con luz; d) Tratamientos son luz</em></p>
+<p>Ambos tratamientos permanecieron a temperatura ambiente durante todo el periodo experimental. La humedad fue repuesta solo en caso si fuera necesario. A partir del día 0 y hasta el día 7, se registró diariamente el número de semillas germinadas nuevas por recipiente, contabilizando como germinada aquella semilla que presentó radícula visible de longitud mayor a 2mm. Los valores registrados en la tabla de google sheet (fb) corresponden a la germinación diaria más no al acumulado.</p>
+</section>
 </section>
 </section>
 <section id="resultados-y-discusiones" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Resultados y discusiones</h1>
 <section id="resultados" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="resultados"><span class="header-section-number">3.1</span> Resultados</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/imgen%20g4_UI-01.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>Figura 2.</p>
+<p><img src="images/clipboard-3309955361.png" class="img-fluid"></p>
+<p><em>Figura 3. a) Semillas germinadas con luz y sin luz&nbsp; ; b) El porcentaje de germinación durante los siete días de evaluación; c) El tamaño de la radícula en cm de todos los plots ; d) Germinación de tratamientos a los siete días.</em></p>
 </section>
 <section id="discusiones" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="discusiones"><span class="header-section-number">3.2</span> Discusiones</h2>
+<p>La germinación de Allium cepa L. evidenció diferencias entre tratamientos, donde la ausencia de luz favoreció una respuesta más uniforme y ligeramente superior en el porcentaje de germinación. Aunque ambos tratamientos alcanzaron su máximo alrededor del tercer día, las semillas en oscuridad mostraron una activación fisiológica más eficiente. Este comportamiento coincide con lo reportado por Abu-Rayyan et al.&nbsp;(2012), quienes señalan que la germinación de cebolla se optimiza bajo condiciones de baja exposición lumínica. Asimismo, Bewley y Black (2012) explican que en especies con fotoblastismo negativo la luz puede actuar como un factor inhibidor, interfiriendo en los procesos metabólicos necesarios para la germinación.</p>
+<p>En cuanto al crecimiento de la radícula, las plántulas desarrolladas en oscuridad presentaron mayor longitud en comparación con aquellas expuestas a la luz, lo que indica un mayor vigor inicial. Este resultado puede explicarse por la estimulación de la elongación celular en ausencia de luz, fenómeno asociado a respuestas adaptativas de las plántulas. Según Renard (1989), la oscuridad favorece el crecimiento inicial en Allium cepa, promoviendo una mayor elongación de las estructuras embrionarias. En contraste, la luz tiende a regular el crecimiento, limitando la elongación radicular en etapas tempranas, lo cual coincide con los resultados observados en este estudio.</p>
 </section>
 </section>
 <section id="conclusiones" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> Conclusiones</h1>
+<p>En respuesta al objetivo 1. Se determinó que la ausencia de luz favorece el porcentaje de germinación de semillas de (<em>Allium cepa</em> L)., cumpliendo el primer objetivo del estudio, ya que las semillas en oscuridad presentaron una germinación más uniforme y eficiente en comparación con aquellas expuestas a la luz. Asimismo, en relación con el segundo objetivo, se evidenció que las plántulas desarrolladas en ausencia de luz alcanzaron un mayor tamaño de radícula a los siete días, lo que indica un mayor vigor inicial. En conjunto, la oscuridad se establece como una condición favorable tanto para la germinación como para el crecimiento inicial de la cebolla (<em>Allium cepa.</em> L<em>)</em>.</p>
 </section>
 <section id="referencias-bibliográficas" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Referencias bibliográficas</h1>
@@ -653,8 +668,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Efecto de la luz en la germinación de semillas de cebolla ( Allium cepa L.)"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Fernandez Rojas, D ; Gomez cruz, K ; Maicelo Villanueva , L ; Rivera Jimenez , Y ; Ortiz Zavaleta , L"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Efecto de la luz en la germinación de semillas de cebolla ( *Allium cepa* L.)"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Fernandez Rojas, D ; Gomez cruz, K ; Maicelo Villanueva , L ; Ortiz Zavaleta , L; Rivera Jimenez , Y ; "</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
@@ -677,65 +692,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introducción</span></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>La cebolla (Allium cepa L.) es una hortaliza de gran importancia socioeconómica a nivel mundial, ocupando el segundo lugar en producción global, con más de 99 millones de toneladas en más de 5 millones de hectáreas (Imran et al., 2025). Además de su valor culinario, posee propiedades funcionales debido a su contenido de flavonoides, compuestos azufrados, vitaminas A y C, y minerales con actividad antioxidante, hipoglicémica y antimicrobiana (Muscolo et al., 2025). Por ello, la obtención de plántulas vigorosas a partir de semillas de alta calidad es clave para el éxito del cultivo, ya que la germinación determina la densidad de establecimiento y la uniformidad del campo (Taylor, 2003). La germinación es un proceso fisiológico regulado por factores ambientales como la temperatura, el agua y la luz. En semillas de cebolla, se ha demostrado que la germinación óptima ocurre entre 10 y 30 °C, con mayor vigor a 25 °C en oscuridad, mientras que temperaturas extremas reducen significativamente la germinación (Abu-Rayyan et al., 2012). Asimismo, la luz puede inhibir este proceso, favoreciendo plántulas anormales, fenómeno asociado al fotoblatismo negativo, donde la germinación es favorecida en ausencia de luz (Bewley &amp; Black, 2012; Renard, 1989). El presente experimento evaluó el efecto de la luz en la germinación de semillas de cebolla variedad Early sweet, bajo la hipótesis de que existirían diferencias significativas en el tiempo y porcentaje de germinación. Se empleó un diseño completamente al azar con dos tratamientos: con luz y sin luz, cada uno con seis repeticiones, registrándose la germinación acumulada durante seis días. Los datos fueron registrados en una planilla de campo y posteriormente analizados con el paquete GerminaR en el entorno estadístico R.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>La cebolla (*Allium cepa* L.) es una hortaliza de gran importancia socioeconómica a nivel mundial, ocupando el segundo lugar en producción global, con más de 99 millones de toneladas en más de 5 millones de hectáreas (Imran et al., 2025). Además de su valor culinario, posee propiedades funcionales debido a su contenido de flavonoides, compuestos azufrados, vitaminas A y C, y minerales con actividad antioxidante (Muscolo et al., 2025). Por ello, la obtención de plántulas vigorosas a partir de semillas de alta calidad es clave, ya que la germinación determina la densidad de establecimiento y la uniformidad del cultivo (Taylor, 2003). La germinación es un proceso fisiológico regulado por factores ambientales como temperatura, agua y luz. En semillas de cebolla, la germinación óptima ocurre entre 10 y 30 °C, con mayor vigor a 25 °C en oscuridad, mientras que condiciones extremas la reducen significativamente (Abu-Rayyan et al., 2012). Asimismo, la luz puede inhibir este proceso, favoreciendo plántulas anormales, fenómeno asociado al fotoblatismo negativo, donde la germinación se favorece en ausencia de luz (Bewley &amp; Black, 2012; Renard, 1989). El experimento evaluó el efecto de la luz en la germinación de semillas de cebolla , bajo la hipótesis de diferencias significativas en el tiempo y porcentaje de germinación. Se empleó un diseño completamente al azar con dos tratamientos con ( luz: si y luz no), seis repeticiones y registro de germinación acumulada durante seis días. Los datos fueron registrados en Tarpuy y analizados con el paquete GerminaR en R. Asimismo se planteó como objetivos. Evaluar el efecto de la presencia y ausencia de luz sobre el porcentaje de germinación de semillas de cebolla (*Allium cepa* L.). y comparar el tamaño de la radícula de las plántulas a los siete días bajo condiciones de luz y sin luz.</span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu"># Materiales y métodos"</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/cebolla.jpg)</span>{fig-align="left" width="1000"}</span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>Para llevar a cabo el experimento se empleó lo siguiente:</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu"># Materiales y métodos</span></span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Materiales</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>Para llevar a cabo el experimento se empleó lo siguiente:</span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Semilla de cebolla (Allium cepa L).</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Taper de plastico</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Papel</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>toalla</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Bolsa negra</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Jeringa</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Agua mineral</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Pinzas</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Cuaderno/Lápiz.</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Cinta scotch</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Ligas Regla</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Guantes de latex</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Etiquetas</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/materiales.png)</span>{fig-align="center"}</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="fu">## Materiales</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Semilla de cebolla *(Allium cepa L)*.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Taper de plastico</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Papel</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>toalla</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Bolsa negra</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Jeringa</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Agua mineral</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Pinzas</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Cuaderno/Lápiz.</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Cinta scotch</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Ligas Regla</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Guantes de latex</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Etiquetas</span>
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>Figura 1. Materiales</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/materiales.png)</span>{fig-align="center"}</span>
 <span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">## Métodos</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>*Figura 1. Materiales*</span>
 <span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>El procedimiento experimental consistió en poner el papel toalla dentro de los tapers y humedecer con agua haciendo uso de la jeringa, sobre el cual se colocaron 25 semillas de cebolla por recipiente, distribuidas de manera uniforme con ayuda de las pinzas y evitando el contacto directo entre las semillas.</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">## Métodos</span></span>
 <span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>Para el tratamiento sin luz (ntreat=2), los recipientes fueron cubiertos herméticamente con bolsas negras, asegurados con las ligas para impedir el ingreso de luz. El tratamiento con luz (ntreat= 1) se mantuvo descubierto bajo iluminación ambiental. Ambos tratamientos permanecieron a temperatura ambiente durante todo el periodo experimental. La humedad fue repuesta solo en caso si fuera necesario.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="fu">### Desarrollo del experimento</span></span>
 <span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>A partir del Día 0 y hasta el Día 6, se registró diariamente el número de semillas germinadas nuevas por recipiente, contabilizando como germinada aquella semilla que presentó radícula visible de longitud mayor a 2mm. Los valores registrados en la tabla 1 corresponden a la germinación diaria más no al acumulado.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>El procedimiento experimental consistió en poner el papel toalla dentro de los tapers y humedecer con agua haciendo uso de la jeringa, sobre el cual se colocaron 25 semillas de cebolla por recipiente, distribuidas de manera uniforme con ayuda de las pinzas y evitando el contacto directo entre las semillas. Para el tratamiento sin luz (ntreat = 2), los seis recipientes fueron cubiertos herméticamente con bolsas negras, asegurados con las ligas para impedir el ingreso de luz. El tratamiento con luz (ntreat= 1) se mantuvo descubierto bajo iluminación ambiental.</span>
 <span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="fu"># Resultados y discusiones</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/experi.jpeg)</span>{fig-align="center" width="454"}</span>
 <span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resultados</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>*Figura 2. a) Colocación de las 25 semillas en cada taper; b) Etiquetado; c) Tratamientos con luz; d) Tratamientos son luz*</span>
 <span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/imgen%20g4_UI-01.jpeg)</span>{fig-align="center"}</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>Ambos tratamientos permanecieron a temperatura ambiente durante todo el periodo experimental. La humedad fue repuesta solo en caso si fuera necesario. A partir del día 0 y hasta el día 7, se registró diariamente el número de semillas germinadas nuevas por recipiente, contabilizando como germinada aquella semilla que presentó radícula visible de longitud mayor a 2mm. Los valores registrados en la tabla de google sheet (fb) corresponden a la germinación diaria más no al acumulado.</span>
 <span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>Figura 2.</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="fu"># Resultados y discusiones</span></span>
 <span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">## Discusiones</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resultados</span></span>
 <span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="fu"># Conclusiones</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/clipboard-3309955361.png)</span></span>
 <span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="fu"># Referencias bibliográficas</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>*Figura 3. a) Semillas germinadas con luz y sin luz&nbsp; ; b) El porcentaje de germinación durante los siete días de evaluación; c) El tamaño de la radícula en cm de todos los plots ; d) Germinación de tratamientos a los siete días.*</span>
 <span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>Abu-Rayyan, A., Akash, M. W., &amp; Gianquinto, G. (2012). Onion Seed Germination as Affected by Temperature and Light. International Journal of Vegetable Science, 18(1), 49-63. https://doi.org/10.1080/19315260.2011.570419</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu">## Discusiones</span></span>
 <span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>Bewley, J. D., &amp; Black, M. (2012). Physiology and Biochemistry of Seeds in Relation to Germination: Volume 2: Viability, Dormancy, and Environmental Control. Springer Science &amp; Business Media.</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>La germinación de Allium cepa L. evidenció diferencias entre tratamientos, donde la ausencia de luz favoreció una respuesta más uniforme y ligeramente superior en el porcentaje de germinación. Aunque ambos tratamientos alcanzaron su máximo alrededor del tercer día, las semillas en oscuridad mostraron una activación fisiológica más eficiente. Este comportamiento coincide con lo reportado por Abu-Rayyan et al. (2012), quienes señalan que la germinación de cebolla se optimiza bajo condiciones de baja exposición lumínica. Asimismo, Bewley y Black (2012) explican que en especies con fotoblastismo negativo la luz puede actuar como un factor inhibidor, interfiriendo en los procesos metabólicos necesarios para la germinación.</span>
 <span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>Imran, M., Kang, H., Lee, S.-G., Kim, E.-H., Park, H.-M., &amp; Oh, S.-W. (2025). Current Trends and Future Prospects in Onion Production, Supply, and Demand in South Korea: A Comprehensive Review. Sustainability, 17(3), 837. https://doi.org/10.3390/su17030837</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>En cuanto al crecimiento de la radícula, las plántulas desarrolladas en oscuridad presentaron mayor longitud en comparación con aquellas expuestas a la luz, lo que indica un mayor vigor inicial. Este resultado puede explicarse por la estimulación de la elongación celular en ausencia de luz, fenómeno asociado a respuestas adaptativas de las plántulas. Según Renard (1989), la oscuridad favorece el crecimiento inicial en Allium cepa, promoviendo una mayor elongación de las estructuras embrionarias. En contraste, la luz tiende a regular el crecimiento, limitando la elongación radicular en etapas tempranas, lo cual coincide con los resultados observados en este estudio.</span>
 <span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>Muscolo, A., Maffia, A., Marra, F., Battaglia, S., Oliva, M., Mallamaci, C., &amp; Russo, M. (2025). Unlocking the Health Secrets of Onions: Investigating the Phytochemical Power and Beneficial Properties of Different Varieties and Their Parts. Molecules, 30(8), 1758. https://doi.org/10.3390/molecules30081758</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="fu"># Conclusiones</span></span>
 <span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Renard, H. A. (1989). INFLUENCES OF LIGHT ON THE GERMINATION AND FIRST GROWTH IN TWO VEGETABLE SPECIES: ALLIUM CEPA AND RAPHANUS SATIVUS. Acta Horticulturae, (253), 187-202. https://doi.org/10.17660/ActaHortic.1989.253.20</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>En respuesta al objetivo 1. Se determinó que la ausencia de luz favorece el porcentaje de germinación de semillas de (*Allium cepa* L)., cumpliendo el primer objetivo del estudio, ya que las semillas en oscuridad presentaron una germinación más uniforme y eficiente en comparación con aquellas expuestas a la luz. Asimismo, en relación con el segundo objetivo, se evidenció que las plántulas desarrolladas en ausencia de luz alcanzaron un mayor tamaño de radícula a los siete días, lo que indica un mayor vigor inicial. En conjunto, la oscuridad se establece como una condición favorable tanto para la germinación como para el crecimiento inicial de la cebolla (*Allium cepa.* L*)*.</span>
 <span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>Taylor, A. G. (2003). SEED DEVELOPMENT <span class="sc">\|</span> Seed Quality. 1285-1291. https://doi.org/10.1016/B0-12-227050-9/00056-9</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="fu"># Referencias bibliográficas</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>Abu-Rayyan, A., Akash, M. W., &amp; Gianquinto, G. (2012). Onion Seed Germination as Affected by Temperature and Light. International Journal of Vegetable Science, 18(1), 49-63. https://doi.org/10.1080/19315260.2011.570419</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>Bewley, J. D., &amp; Black, M. (2012). Physiology and Biochemistry of Seeds in Relation to Germination: Volume 2: Viability, Dormancy, and Environmental Control. Springer Science &amp; Business Media.</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>Imran, M., Kang, H., Lee, S.-G., Kim, E.-H., Park, H.-M., &amp; Oh, S.-W. (2025). Current Trends and Future Prospects in Onion Production, Supply, and Demand in South Korea: A Comprehensive Review. Sustainability, 17(3), 837. https://doi.org/10.3390/su17030837</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>Muscolo, A., Maffia, A., Marra, F., Battaglia, S., Oliva, M., Mallamaci, C., &amp; Russo, M. (2025). Unlocking the Health Secrets of Onions: Investigating the Phytochemical Power and Beneficial Properties of Different Varieties and Their Parts. Molecules, 30(8), 1758. https://doi.org/10.3390/molecules30081758</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>Renard, H. A. (1989). INFLUENCES OF LIGHT ON THE GERMINATION AND FIRST GROWTH IN TWO VEGETABLE SPECIES: ALLIUM CEPA AND RAPHANUS SATIVUS. Acta Horticulturae, (253), 187-202. https://doi.org/10.17660/ActaHortic.1989.253.20</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>Taylor, A. G. (2003). SEED DEVELOPMENT <span class="sc">\|</span> Seed Quality. 1285-1291. https://doi.org/10.1016/B0-12-227050-9/00056-9</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

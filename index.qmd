@@ -1,6 +1,6 @@
 ---
-title: "Efecto de la luz en la germinación de semillas de cebolla ( Allium cepa L.)"
-author: "Fernandez Rojas, D ; Gomez cruz, K ; Maicelo Villanueva , L ; Rivera Jimenez , Y ; Ortiz Zavaleta , L"
+title: "Efecto de la luz en la germinación de semillas de cebolla ( *Allium cepa* L.)"
+author: "Fernandez Rojas, D ; Gomez cruz, K ; Maicelo Villanueva , L ; Ortiz Zavaleta , L; Rivera Jimenez , Y ; "
 format: 
   html:
     toc: true
@@ -23,15 +23,17 @@ execute:
 
 # Introducción
 
-La cebolla (Allium cepa L.) es una hortaliza de gran importancia socioeconómica a nivel mundial, ocupando el segundo lugar en producción global, con más de 99 millones de toneladas en más de 5 millones de hectáreas (Imran et al., 2025). Además de su valor culinario, posee propiedades funcionales debido a su contenido de flavonoides, compuestos azufrados, vitaminas A y C, y minerales con actividad antioxidante, hipoglicémica y antimicrobiana (Muscolo et al., 2025). Por ello, la obtención de plántulas vigorosas a partir de semillas de alta calidad es clave para el éxito del cultivo, ya que la germinación determina la densidad de establecimiento y la uniformidad del campo (Taylor, 2003). La germinación es un proceso fisiológico regulado por factores ambientales como la temperatura, el agua y la luz. En semillas de cebolla, se ha demostrado que la germinación óptima ocurre entre 10 y 30 °C, con mayor vigor a 25 °C en oscuridad, mientras que temperaturas extremas reducen significativamente la germinación (Abu-Rayyan et al., 2012). Asimismo, la luz puede inhibir este proceso, favoreciendo plántulas anormales, fenómeno asociado al fotoblatismo negativo, donde la germinación es favorecida en ausencia de luz (Bewley & Black, 2012; Renard, 1989). El presente experimento evaluó el efecto de la luz en la germinación de semillas de cebolla variedad Early sweet, bajo la hipótesis de que existirían diferencias significativas en el tiempo y porcentaje de germinación. Se empleó un diseño completamente al azar con dos tratamientos: con luz y sin luz, cada uno con seis repeticiones, registrándose la germinación acumulada durante seis días. Los datos fueron registrados en una planilla de campo y posteriormente analizados con el paquete GerminaR en el entorno estadístico R.
+La cebolla (*Allium cepa* L.) es una hortaliza de gran importancia socioeconómica a nivel mundial, ocupando el segundo lugar en producción global, con más de 99 millones de toneladas en más de 5 millones de hectáreas (Imran et al., 2025). Además de su valor culinario, posee propiedades funcionales debido a su contenido de flavonoides, compuestos azufrados, vitaminas A y C, y minerales con actividad antioxidante (Muscolo et al., 2025). Por ello, la obtención de plántulas vigorosas a partir de semillas de alta calidad es clave, ya que la germinación determina la densidad de establecimiento y la uniformidad del cultivo (Taylor, 2003). La germinación es un proceso fisiológico regulado por factores ambientales como temperatura, agua y luz. En semillas de cebolla, la germinación óptima ocurre entre 10 y 30 °C, con mayor vigor a 25 °C en oscuridad, mientras que condiciones extremas la reducen significativamente (Abu-Rayyan et al., 2012). Asimismo, la luz puede inhibir este proceso, favoreciendo plántulas anormales, fenómeno asociado al fotoblatismo negativo, donde la germinación se favorece en ausencia de luz (Bewley & Black, 2012; Renard, 1989). El experimento evaluó el efecto de la luz en la germinación de semillas de cebolla , bajo la hipótesis de diferencias significativas en el tiempo y porcentaje de germinación. Se empleó un diseño completamente al azar con dos tratamientos con ( luz: si y luz no), seis repeticiones y registro de germinación acumulada durante seis días. Los datos fueron registrados en Tarpuy y analizados con el paquete GerminaR en R. Asimismo se planteó como objetivos. Evaluar el efecto de la presencia y ausencia de luz sobre el porcentaje de germinación de semillas de cebolla (*Allium cepa* L.). y comparar el tamaño de la radícula de las plántulas a los siete días bajo condiciones de luz y sin luz.
 
-# Materiales y métodos"
+![](images/cebolla.jpg){fig-align="left" width="1000"}
+
+# Materiales y métodos
 
 Para llevar a cabo el experimento se empleó lo siguiente:
 
 ## Materiales
 
--   Semilla de cebolla (Allium cepa L).
+-   Semilla de cebolla *(Allium cepa L)*.
 -   Taper de plastico
 -   Papel
 -   toalla
@@ -47,27 +49,37 @@ Para llevar a cabo el experimento se empleó lo siguiente:
 
 ![](images/materiales.png){fig-align="center"}
 
-Figura 1. Materiales
+*Figura 1. Materiales*
 
 ## Métodos
 
-El procedimiento experimental consistió en poner el papel toalla dentro de los tapers y humedecer con agua haciendo uso de la jeringa, sobre el cual se colocaron 25 semillas de cebolla por recipiente, distribuidas de manera uniforme con ayuda de las pinzas y evitando el contacto directo entre las semillas.
+### Desarrollo del experimento
 
-Para el tratamiento sin luz (ntreat=2), los recipientes fueron cubiertos herméticamente con bolsas negras, asegurados con las ligas para impedir el ingreso de luz. El tratamiento con luz (ntreat= 1) se mantuvo descubierto bajo iluminación ambiental. Ambos tratamientos permanecieron a temperatura ambiente durante todo el periodo experimental. La humedad fue repuesta solo en caso si fuera necesario.
+El procedimiento experimental consistió en poner el papel toalla dentro de los tapers y humedecer con agua haciendo uso de la jeringa, sobre el cual se colocaron 25 semillas de cebolla por recipiente, distribuidas de manera uniforme con ayuda de las pinzas y evitando el contacto directo entre las semillas. Para el tratamiento sin luz (ntreat = 2), los seis recipientes fueron cubiertos herméticamente con bolsas negras, asegurados con las ligas para impedir el ingreso de luz. El tratamiento con luz (ntreat= 1) se mantuvo descubierto bajo iluminación ambiental.
 
-A partir del Día 0 y hasta el Día 6, se registró diariamente el número de semillas germinadas nuevas por recipiente, contabilizando como germinada aquella semilla que presentó radícula visible de longitud mayor a 2mm. Los valores registrados en la tabla 1 corresponden a la germinación diaria más no al acumulado.
+![](images/experi.jpeg){fig-align="center" width="454"}
+
+*Figura 2. a) Colocación de las 25 semillas en cada taper; b) Etiquetado; c) Tratamientos con luz; d) Tratamientos son luz*
+
+Ambos tratamientos permanecieron a temperatura ambiente durante todo el periodo experimental. La humedad fue repuesta solo en caso si fuera necesario. A partir del día 0 y hasta el día 7, se registró diariamente el número de semillas germinadas nuevas por recipiente, contabilizando como germinada aquella semilla que presentó radícula visible de longitud mayor a 2mm. Los valores registrados en la tabla de google sheet (fb) corresponden a la germinación diaria más no al acumulado.
 
 # Resultados y discusiones
 
 ## Resultados
 
-![](images/imgen%20g4_UI-01.jpeg){fig-align="center"}
+![](images/clipboard-3309955361.png)
 
-Figura 2.
+*Figura 3. a) Semillas germinadas con luz y sin luz  ; b) El porcentaje de germinación durante los siete días de evaluación; c) El tamaño de la radícula en cm de todos los plots ; d) Germinación de tratamientos a los siete días.*
 
 ## Discusiones
 
+La germinación de Allium cepa L. evidenció diferencias entre tratamientos, donde la ausencia de luz favoreció una respuesta más uniforme y ligeramente superior en el porcentaje de germinación. Aunque ambos tratamientos alcanzaron su máximo alrededor del tercer día, las semillas en oscuridad mostraron una activación fisiológica más eficiente. Este comportamiento coincide con lo reportado por Abu-Rayyan et al. (2012), quienes señalan que la germinación de cebolla se optimiza bajo condiciones de baja exposición lumínica. Asimismo, Bewley y Black (2012) explican que en especies con fotoblastismo negativo la luz puede actuar como un factor inhibidor, interfiriendo en los procesos metabólicos necesarios para la germinación.
+
+En cuanto al crecimiento de la radícula, las plántulas desarrolladas en oscuridad presentaron mayor longitud en comparación con aquellas expuestas a la luz, lo que indica un mayor vigor inicial. Este resultado puede explicarse por la estimulación de la elongación celular en ausencia de luz, fenómeno asociado a respuestas adaptativas de las plántulas. Según Renard (1989), la oscuridad favorece el crecimiento inicial en Allium cepa, promoviendo una mayor elongación de las estructuras embrionarias. En contraste, la luz tiende a regular el crecimiento, limitando la elongación radicular en etapas tempranas, lo cual coincide con los resultados observados en este estudio.
+
 # Conclusiones
+
+En respuesta al objetivo 1. Se determinó que la ausencia de luz favorece el porcentaje de germinación de semillas de (*Allium cepa* L)., cumpliendo el primer objetivo del estudio, ya que las semillas en oscuridad presentaron una germinación más uniforme y eficiente en comparación con aquellas expuestas a la luz. Asimismo, en relación con el segundo objetivo, se evidenció que las plántulas desarrolladas en ausencia de luz alcanzaron un mayor tamaño de radícula a los siete días, lo que indica un mayor vigor inicial. En conjunto, la oscuridad se establece como una condición favorable tanto para la germinación como para el crecimiento inicial de la cebolla (*Allium cepa.* L*)*.
 
 # Referencias bibliográficas
 
