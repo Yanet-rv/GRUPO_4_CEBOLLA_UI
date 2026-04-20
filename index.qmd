@@ -1,6 +1,6 @@
 ---
 title: "Efecto de la luz en la germinación de semillas de cebolla ( *Allium cepa* L.)"
-author: "Fernandez Rojas, D ; Gomez cruz, K ; Maicelo Villanueva , L ; Ortiz Zavaleta , L; Rivera Jimenez , Y ; "
+author: "Fernandez Rojas, D ; Gomez cruz, K ; Maicelo Villanueva , L ; Ortiz Zavaleta , L; Rivera Jimenez , Y ."
 format: 
   html:
     toc: true
