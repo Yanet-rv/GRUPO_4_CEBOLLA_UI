@@ -59,7 +59,7 @@ El procedimiento experimental consistió en poner el papel toalla dentro de los 
 
 ![](images/experi.jpeg){fig-align="center" width="454"}
 
-*Figura 2. a) Colocación de las 25 semillas en cada taper; b) Etiquetado; c) Tratamientos con luz; d) Tratamientos son luz*
+*Figura 2. a) Colocación de las 25 semillas en cada taper; b) Etiquetado; c) Tratamientos con luz; d) Tratamientos sin luz*
 
 Ambos tratamientos permanecieron a temperatura ambiente durante todo el periodo experimental. La humedad fue repuesta solo en caso si fuera necesario. A partir del día 0 y hasta el día 7, se registró diariamente el número de semillas germinadas nuevas por recipiente, contabilizando como germinada aquella semilla que presentó radícula visible de longitud mayor a 2mm. Los valores registrados en la tabla de google sheet (fb) corresponden a la germinación diaria más no al acumulado.
 
